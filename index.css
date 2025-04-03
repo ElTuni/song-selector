@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("img/blackbkrd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* pricipipal modal */
+.modal {
+    background-color: #1f1f1f71;
+    width: 500px;
+    height: fit-content;
+    padding: 120px 30px 30px 30px;
+}
+
+.title {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: #1F1F1F solid 10px;
+    background-color: rgba(245, 245, 245, 0.856);
+}
+
+/* centering */
+.modal, .output, .album-cover{
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+/* absolute */
+.modal, .output, .album-cover, .title, .x-btn, .song-title-modal, .song-title{
+    position: absolute;
+}
+
+/* font */
+.btn-mood, .x-btn, .song-title, output{
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.btn-mood {
+    font-family: inherit;
+    width: 150px;
+    padding: 15px 0px;
+    text-shadow: 1px 1px 5px #1F1F1F ;
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 0.5s;
+}
+.btn-mood:hover{
+    box-shadow: rgba(245, 245, 245, 0.534) 0px 0px 10px;
+}
+
+.emotions-buttons-modal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 100px;
+    row-gap: 15px;
+}
+
+.emotions-buttons-modal:last-child{
+    justify-content: center;
+}
+
+.output {
+    display: none;
+    background-color: #1F1F1F;
+    width: 400px;
+    height: 300px;
+}
+
+.x-btn{
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.song-title-modal{
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-end-end-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.song-title{
+    margin: 0px;
+    left: 20px;
+    bottom: 11px;
+    font-size: 20px;
+}
+
+.album-cover {
+    width: 170px;
+    border-radius: 0;
+    margin-bottom: 85px;
+}
